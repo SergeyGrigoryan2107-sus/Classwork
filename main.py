@@ -1,42 +1,107 @@
-#Задание1
-#a=int(input("введите дату рождения"))
-#if 1925<=a<=1944: print(" млчаливое поколение")
-#if 1944<=a<=1967: print(" поколение бейби-бумеров")
-#if 1967<=a<=1984: print("поколение x  ")
-#if 1984<=a<=2000: print("поколение Y - меллиниалы")
-#if 2000<=a<=2011: print("поколение z- зуммеры")
-#if a>=2011: print(" поколение alfa")
+'''students=["Иван","Олег","Виктор","Катя"]
+students[2]="ttttt"
+for i in range(len(students)):
+    students[i]+="oooo"
+    print(students[i])
 
-#Задание 2
-#a=int(input("введите первое число"))
-#b=int(input("введите второе числе"))
-#if a>b: a,b=b,a
-#a1=a; a2=a
-#num1=0 # сумма чисел кратных 3
-#num2=0 # количество чисел кратных 3
-#while a1<b:
-#    if a%3==0:
-#        num1=numt1+1
-#        num2+=1
-#    a1=1
-#print("сумма чисел кратных 3",num1,"количество чисел кратных 3",num2,"сумма чисел кратныз 3")
-#print("среднее арифметическое:", num1/num2)'''
-#a=int(input("первое число"))
-#b=int(input("второе число"))
-#c=int(input("введите число в их диапозоне"))
-#if a>b:a,b=b,a
-#count1=0 # количество попыток
-#import random
-#d=random.randint(a,b)
-#while d!=c:
-#    print(c,d)
-#    count1+=1
-#if count1>20; print(count1)
-#print(a,b,"загаданное число",d, "количество попыток угадать",count1,)'''
-#Задание4
-a=int(input("введите сторону квадрата"))
-for i in range(j):
-    for j in range(1,a,1):
-        print(i*"*")
+for i in students:
+    i+="1111"
+    print(i)
 
+print(students)'''
+'''a=int(input("введите число"))
+num=0
+numbers=[0,1,2,3,4,5,6,7,8,9,87,1,2,32,1,6513,8,43,51,81,5,13,8,3,18,3,48]
+for i in range(len(numbers)):
+    if a==numbers[i]:
+        num+=1
+        print(num)'''
+'''import random
+numbers=[0,1,2,3,4,5,6,7,8,9,87,1,2,32,1,6513,8,43,51,81,5,13,8,3,18,3,48]
+a=int(input("введите число"))
+b=0
 
+for i in range(a):
+    print(numbers[random.randint(0,len(numbers)-1)], end=" ")'''
+'''numbers=[0,1,2,3,4,5,6,7,8,9,87,1,2,32,1,6513,8,43,51,81,5,13,8,3,18,3,48]
+a=len(numbers)-1
+for i in range(len(numbers)-1,-1,-1):
+    print(numbers[i],end=" ")'''
+'''numbers=[0,1,-2,3,5,-6,7,8,9,-87,1,2,-32,1,65,-13,8,-43,51,-81,5,-13,8,-3,-18,3,48]
+sum1=0
+for i in range(1,len(numbers)-1):
+    if numbers[i]<0:
+        sum1 += numbers[i]
+print(sum1)'''
+'''numbers=[0,1,-2,3,5,-6,7,8,9,-87,1,2,-32,1,65,-13,8,-43,51,-81,5,-13,8,-3,-18,3,48]
+sum1=0
+for i in range(0,len(numbers)-1):
+    if numbers[i]%2==0:
+        sum1 += numbers[i]
+print(sum1,end=" ")'''
+'''numbers=[0,1,-2,3,5,-6,7,8,9,-87,1,2,-32,1,65,-13,8,-43,51,-81,5,-13,8,-3,-18,3,48]
+sum1=0
+for i in range(1,len(numbers)-1):
+    if numbers[i]%1==0:
+        sum1 += numbers[i]
+print(sum1)'''
+'''numbers = [0, 1, -2, 3, 5, -6, 7, 8, 9, -87, 1, 2, -32, 1, 65, -13, 8, -43, 51, -81, 5, -13, 8, -3, -18, 3, 48]
+sum_neg = 0
+sum_odd = 0
+sum_even = 0
+for i in numbers:
+    if i % 2 == 0:
+        sum_odd += i
+    else:
+        sum_even += i
+    if i < 0: sum_neg += i
+
+for i in range(0, len(numbers), 3):
+    print(numbers[i])'''
+'''numbers = [0, 1, -2, 3, 5, -6, 7, 8, 9, -87, 1, 2, -32, 1, 65, -13, 8, -43, 51, -81, 5, -13, 8, -3, -18, 3, 48]
+min = numbers[0]
+max = numbers[0]
+for i in range(0, len(numbers) - 1):
+    if min > numbers[i]:
+        min = numbers[i]
+print(min,end=" ")
+for i in range(0, len(numbers) - 1):
+    if max < numbers[i]:
+        max = numbers[i]
+print(max,end=" ")'''
+'''numbers = [0, 1, -2, 3, 65, -13, 8, -43, 51, -81, 5, -13, 8, -3, -18, 3, 48]
+min = numbers[0]
+max = numbers[0]
+min_index = 0
+max_index = 0
+sum = 0
+for i in range(0, len(numbers) - 1):
+    if min > 0:
+        min > numbers[i]
+        min = numbers[i]
+        min_index = i
+print(min, end=" ")
+for i in range(0, len(numbers) - 1):
+    if max < numbers[i]:
+        max = numbers[i]
+        max_index = i
+print(max, end=" ")
+for i in range(min_index, max_index):
+    sum += numbers[i]
+print(sum, end=" ")'''
+'''break'''
+'''numbers = [0, 1, -2, 3, 65, -13, 8, -43, 51, -81, 5, -13, 8, -3, -18, 3, 48]
+first_index = 0;
+last_index = 0;
+sum = 0
+for i in range(0, len(numbers)):
+    if numbers[i]> 0:
+        first_index = i
+        break
+for i in range( len(numbers) - 1,-1,-1):
+    if numbers[i]> 0:
+        last_index = i
+        break
+for i in range(first_index+1, last_index):
+    sum += numbers[i]
+print(sum, end=" ")'''
